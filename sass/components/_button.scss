@@ -11,6 +11,9 @@
 	transition: $transition;
 	text-transform: capitalize;
 	display: inline-block;
+	a {
+		color: var(--white);
+	}
 	@include btn-hover {
 		box-shadow: var(--shadow-md);
 	}

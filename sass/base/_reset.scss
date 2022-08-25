@@ -52,7 +52,7 @@ a:active {
 
 	@include u.on-event {
 		// @include c.var(color, 'tertiary', c.$colors);
-		color: darken(u.$brand-color, 30%);
+		color: darken(u.$brand-color, 15%);
 		// read doc https://sass-lang.com/documentation/modules/color
 	}
 }
@@ -61,7 +61,7 @@ a:active {
 img,
 picture,
 svg {
-	width: 100%;
+	max-width: 100%;
 	display: block;
 	object-fit: cover;
 }
