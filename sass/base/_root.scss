@@ -1,0 +1,20 @@
+@use '../utilities/colors' as c;
+@use '../utilities/mixins' as *;
+@use './fonts' as f;
+
+:root {
+	@each $name, $value in c.$colors {
+		--#{$name}: #{$value};
+	}
+	@each $screen-size, $font-size in f.$type-scale {
+		// refer to a size in $type-scale
+		@if $screen-size == normal {
+			@each $size, $value in $font-size {
+				--fs-#{$size}: #{$value};
+			}
+		}
+	}
+	@each $name, $value in f.$font-weigths {
+		--fw-#{$name}: #{$value};
+	}
+}
