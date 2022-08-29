@@ -6,7 +6,7 @@
 /// General style colors
 $headline-color: f.color('dark') !default;
 $text-color: f.color('gray') !default;
-$body-bg: f.color('gray-50') !default;
+$body-bg: f.color('white') !default;
 
 /// Main Brand Color
 $brand-color: f.color(primary) !default;
@@ -16,7 +16,7 @@ $success: f.color('green') !default;
 $red-flag: #ad325e !default;
 
 /// Container's maximum width
-$max-width: 70rem !default;
+$max-width: 80rem !default;
 
 /// Box Shadow
 $clr-shadow: hsla(0, 0%, 0%, 0.1);

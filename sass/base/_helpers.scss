@@ -13,23 +13,6 @@ figure {
 	box-shadow: $shadow-lg;
 }
 
-//todo section class
-section {
-	padding: 2rem 0;
-}
-
-/* section title */
-.section-title {
-	text-align: center;
-	margin-bottom: 1.2em;
-	@include pseudo($loc: after, $top: null, $bottom: -0.5rem) {
-		background-color: var(--secondary);
-		width: 3em;
-		height: 0.25rem;
-		margin: 0 auto;
-	}
-}
-
 // flex center
 .flex-row {
 	@include flexCenter(row);
@@ -47,3 +30,12 @@ section {
 .text-center {
 	text-align: center;
 }
+
+// .home-img {
+// 	position: absolute;
+// 	bottom: 0;
+// 	right: 0;
+// 	width: 600px;
+// 	height: 90%;
+// 	z-index: -1;
+// }

@@ -1,0 +1,47 @@
+@use '../utilities/' as *;
+//todo section class
+section {
+	height: 90vh;
+}
+
+.home {
+	@include flexCenter;
+	text-align: center;
+	h1 {
+		font-size: var(--fs-500);
+	}
+	p {
+		font-size: var(--fs-50);
+	}
+	.home-content {
+		max-width: 40em;
+	}
+	@include mq('xlarge') {
+		flex-direction: row;
+		text-align: inherit;
+		h1 {
+			font-size: var(--fs-600);
+		}
+		p {
+			font-size: var(--fs-100);
+		}
+		.home-content {
+			flex: 1;
+		}
+		.home-image {
+			flex: 1;
+		}
+	}
+}
+
+/* section title */
+.section-title {
+	text-align: center;
+	margin-bottom: 1.2em;
+	@include pseudo($loc: after, $top: null, $bottom: -0.5rem) {
+		background-color: var(--secondary);
+		width: 3em;
+		height: 0.25rem;
+		margin: 0 auto;
+	}
+}
