@@ -12,6 +12,13 @@
 			@each $size, $value in $font-size {
 				--fs-#{$size}: #{$value};
 			}
+		} @else {
+			// indicate $breakpoint of your media-query
+			@include mq('large') {
+				@each $size, $value in $font-size {
+					--fs-#{$size}: #{$value};
+				}
+			}
 		}
 	}
 	@each $name, $value in f.$font-weigths {

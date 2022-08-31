@@ -1,7 +1,7 @@
 @use '../utilities/' as *;
 //todo section class
 section {
-	height: 90vh;
+	min-height: 90vh;
 }
 
 .home {
@@ -12,24 +12,24 @@ section {
 	}
 	p {
 		font-size: var(--fs-50);
+		margin-bottom: 2rem;
 	}
 	.home-content {
 		max-width: 40em;
 	}
+
 	@include mq('xlarge') {
 		flex-direction: row;
 		text-align: inherit;
 		h1 {
-			font-size: var(--fs-600);
+			max-width: 10em;
+			line-height: 1.2;
 		}
 		p {
 			font-size: var(--fs-100);
 		}
-		.home-content {
-			flex: 1;
-		}
-		.home-image {
-			flex: 1;
+		.home-img {
+			height: 31rem;
 		}
 	}
 }
