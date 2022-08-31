@@ -6,27 +6,29 @@ section {
 
 .home {
 	@include flexCenter;
-	text-align: center;
+	&-content {
+		max-width: 42em;
+	}
 	h1 {
 		font-size: var(--fs-500);
+		max-width: 12em;
 	}
 	p {
 		font-size: var(--fs-50);
 		margin-bottom: 2rem;
 	}
-	.home-content {
-		max-width: 40em;
-	}
 
 	@include mq('xlarge') {
 		flex-direction: row;
-		text-align: inherit;
+		&-content {
+			max-width: unset;
+		}
 		h1 {
-			max-width: 10em;
 			line-height: 1.2;
 		}
 		p {
 			font-size: var(--fs-100);
+			max-width: 40rem;
 		}
 		.home-img {
 			height: 31rem;
