@@ -32,6 +32,9 @@ section {
 		}
 		.home-img {
 			height: 100%;
+			@include mq('xlarge') {
+				scale: 1.2;
+			}
 		}
 	}
 }
