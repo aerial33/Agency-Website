@@ -24,13 +24,14 @@ ol[role='list'] {
 }
 
 /* Set core root defaults */
+html,
 html:focus-within {
 	scroll-behavior: smooth;
 }
 
 html,
 body {
-	height: 100%;
+	min-height: 100%;
 }
 
 /* Set core body defaults */

@@ -1,12 +1,16 @@
 @use '../utilities/' as u;
 
 header {
+	position: sticky;
+	top: 0;
+	z-index: 11;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding-left: 1rem;
-	margin-bottom: 2em;
 	box-shadow: u.$shadow;
+	background: rgba(255, 255, 255, 0.5);
+	// backdrop-filter: blur(7px); // @fix issue with menu navigation
 
 	@include u.mq('xlarge') {
 		width: min(100% - 2rem, 80rem);
