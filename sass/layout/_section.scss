@@ -3,11 +3,6 @@
 section {
 	min-height: 90vh;
 	padding-top: 2em;
-	.text-title {
-		max-width: 42em;
-		text-align: center;
-		margin-inline: auto;
-	}
 }
 
 .home {
@@ -104,18 +99,69 @@ section {
 		}
 	}
 }
+
+.contact {
+	margin-top: 2em;
+	@include flexCenter;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	.contact-form {
+		background: var(--gray-100);
+		width: 100%;
+		padding: 30px 30px 20px;
+	}
+
+	.contact-info {
+		background: var(--gray-100);
+		width: 100%;
+		padding: 30px 20px;
+		h4 {
+			margin: 1em 0;
+		}
+		.info-box {
+			display: flex;
+			align-items: baseline;
+		}
+		.contact-icon {
+			width: 20px;
+			margin-right: 40px;
+		}
+	}
+
+	@include mq('large') {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		.contact-form {
+			padding: 60px 40px 20px;
+		}
+		.contact.info {
+			width: 22em;
+			padding: 60px 40px;
+		}
+	}
+}
+
 #contact {
 	height: 100vh;
 }
 
 /* section title */
-.section-title {
-	text-align: center;
-	margin-bottom: 1.2em;
-	@include pseudo($loc: after, $top: null, $bottom: -0.5rem) {
-		background-color: var(--secondary);
-		width: 3em;
-		height: 0.25rem;
-		margin: 0 auto;
+.title-section {
+	h2 {
+		text-align: center;
+		margin-bottom: 1.2em;
+		@include pseudo($loc: after, $top: null, $bottom: -0.5rem) {
+			background-color: var(--secondary);
+			width: 3em;
+			height: 0.25rem;
+			margin: 0 auto;
+		}
+	}
+	p {
+		max-width: 42em;
+		text-align: left;
+		margin-inline: auto;
 	}
 }

@@ -4,12 +4,10 @@
 /** Form */
 
 .form {
-	max-width: 40rem;
 	background: var(--white);
 	border-radius: $bd-radius;
 	box-shadow: $shadow-md;
 	padding: 2rem 2.5rem;
-	margin-inline: auto; /* must be modified if wrapped in container form */
 
 	.form-row {
 		margin-bottom: 1rem;
