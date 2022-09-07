@@ -2,6 +2,7 @@
 //todo section class
 section {
 	min-height: 90vh;
+	padding-top: 2em;
 }
 
 .home {
@@ -20,6 +21,7 @@ section {
 
 	@include mq('xlarge') {
 		flex-direction: row;
+		justify-content: space-between;
 		&-content {
 			max-width: unset;
 		}
@@ -37,6 +39,41 @@ section {
 			}
 		}
 	}
+}
+
+.services {
+	p {
+		max-width: 42em;
+		text-align: center;
+		margin-inline: auto;
+	}
+	.services-cards {
+		padding-top: 2rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2.5rem;
+		text-align: center;
+		.card {
+			display: grid;
+			place-items: center;
+			padding: 2em;
+			background: var(--gray-100);
+			border-radius: $bd-radius;
+		}
+		img {
+			max-width: 100px;
+		}
+		@include mq('large') {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include mq('xlarge') {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+
+#contact {
+	height: 100vh;
 }
 
 /* section title */
