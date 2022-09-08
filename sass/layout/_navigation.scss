@@ -6,7 +6,8 @@
 	left: 100%;
 	width: 100%;
 	height: 100%;
-	background-color: var(--gray-100);
+	background-color: rgba(255, 255, 255, 0.5);
+	backdrop-filter: saturate(180%) blur(20px);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -24,6 +25,7 @@
 		}
 		li a {
 			font-size: var(--fs-400);
+			color: var(--dark);
 		}
 	}
 	.social-bar {
@@ -67,7 +69,6 @@
 	width: 60px;
 	height: 60px;
 	z-index: 10;
-	// display: block;
 	> * {
 		display: block;
 		width: 32px;
