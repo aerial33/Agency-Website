@@ -63,12 +63,29 @@
 }
 .toggle {
 	cursor: pointer;
+	background-color: var(--primary);
 	width: 60px;
 	height: 60px;
-	background: var(--primary) url(/images/menu.png) no-repeat center/30px;
 	z-index: 10;
+	// display: block;
+	> * {
+		display: block;
+		width: 32px;
+		height: 3px;
+		background-color: var(--white);
+		margin: 3px;
+		transition: u.$transition;
+	}
 	&.active {
-		background: var(--primary) url('/images/close.png') no-repeat center/25px;
+		.line1 {
+			transform: rotate(-45deg) translate(-7px, 7px);
+		}
+		.line2 {
+			opacity: 0;
+		}
+		.line3 {
+			transform: rotate(45deg) translate(-5px, -6px);
+		}
 	}
 
 	@include u.mq('xlarge') {
