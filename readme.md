@@ -16,3 +16,6 @@
 - 🎯 Next Step ? Make this Website with [Astro](https://astro.build/) and React Components.
 
 A project inspired by [Brad Traversy tutorial](https://youtu.be/lvYnfMOUOJY)
+Thanks to [Maciek Sitkowski](https://github.com/sitek94) for [deployment guide with Ghitub Actions](https://github.com/sitek94/vite-deploy-demo/tree/main#readme).
+
+Or We can deploy in Github Pages with the documentation from [Vitejs](https://vitejs.dev/guide/static-deploy.html#github-pages).
